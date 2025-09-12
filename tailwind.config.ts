@@ -47,6 +47,20 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        // LYK Studio custom colors
+        gold: {
+          DEFAULT: "hsl(var(--gold))",
+          light: "hsl(var(--gold-light))",
+          dark: "hsl(var(--gold-dark))",
+        },
+        "black-soft": "hsl(var(--black-soft))",
+        "gray-elegant": "hsl(var(--gray-elegant))",
+        // Gradients as background images
+        gradient: {
+          gold: "var(--gradient-gold)",
+          black: "var(--gradient-black)",
+          hero: "var(--gradient-hero)",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -57,6 +71,20 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+      },
+      backgroundImage: {
+        "gradient-gold": "var(--gradient-gold)",
+        "gradient-black": "var(--gradient-black)",
+        "gradient-hero": "var(--gradient-hero)",
+      },
+      boxShadow: {
+        elegant: "var(--shadow-elegant)",
+        gold: "var(--shadow-gold)",
+        lifted: "var(--shadow-lifted)",
+      },
+      transitionTimingFunction: {
+        smooth: "var(--transition-smooth)",
+        bounce: "var(--transition-bounce)",
       },
       borderRadius: {
         lg: "var(--radius)",
