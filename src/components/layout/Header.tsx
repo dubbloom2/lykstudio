@@ -7,11 +7,12 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navigation = [
-    { name: "Accueil", href: "#home" },
-    { name: "À propos", href: "#about" },
-    { name: "Services", href: "#services" },
-    { name: "Contact", href: "#contact" },
-    { name: "FAQ", href: "#faq" },
+    { name: "Accueil", href: "/" },
+    { name: "À propos", href: "/about" },
+    { name: "Services", href: "/services" },
+    { name: "Portfolio", href: "/portfolio" },
+    { name: "Contact", href: "/contact" },
+    { name: "FAQ", href: "/faq" },
   ];
 
   return (
@@ -32,13 +33,13 @@ const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8">
             {navigation.map((item) => (
-              <a
+              <Link
                 key={item.name}
-                href={item.href}
+                to={item.href}
                 className="text-foreground hover:text-gold transition-smooth font-medium"
               >
                 {item.name}
-              </a>
+              </Link>
             ))}
           </nav>
 
@@ -51,7 +52,7 @@ const Header = () => {
               </a>
             </Button>
             <Button variant="default" size="sm" asChild>
-              <a href="#contact">Réserver</a>
+              <Link to="/contact">Réserver</Link>
             </Button>
           </div>
 
@@ -73,14 +74,14 @@ const Header = () => {
           <div className="lg:hidden mt-4 pb-4 border-t border-border">
             <nav className="flex flex-col space-y-4 mt-4">
               {navigation.map((item) => (
-                <a
+                <Link
                   key={item.name}
-                  href={item.href}
+                  to={item.href}
                   onClick={() => setIsMenuOpen(false)}
                   className="text-foreground hover:text-gold transition-smooth font-medium py-2"
                 >
                   {item.name}
-                </a>
+                </Link>
               ))}
               <div className="flex flex-col space-y-2 pt-2">
                 <Button variant="outline" size="sm" asChild>
@@ -90,7 +91,7 @@ const Header = () => {
                   </a>
                 </Button>
                 <Button variant="default" size="sm" asChild>
-                  <a href="#contact">Réserver une séance</a>
+                  <Link to="/contact">Réserver une séance</Link>
                 </Button>
               </div>
             </nav>
