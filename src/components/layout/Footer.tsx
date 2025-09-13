@@ -1,6 +1,5 @@
 import { Camera, MapPin, Phone, Mail, Clock, Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 import { Link } from "react-router-dom";
-import lykLogo from "@/assets/lyk-logo.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();

@@ -122,7 +122,7 @@ const Services = () => {
                   className="w-full mt-4 group-hover:bg-gold-light/20 group-hover:text-gold transition-smooth"
                   asChild
                 >
-                  <a href="/contact" className="flex items-center justify-center space-x-2">
+                  <a href="#contact" className="flex items-center justify-center space-x-2">
                     <span>Réserver maintenant</span>
                     <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
                   </a>
@@ -148,7 +148,7 @@ const Services = () => {
                 className="bg-gold hover:bg-gold-dark text-black font-semibold shadow-gold"
                 asChild
               >
-                <a href="/contact">Demander un devis</a>
+                <a href="#contact">Demander un devis</a>
               </Button>
               <Button 
                 variant="outline" 
