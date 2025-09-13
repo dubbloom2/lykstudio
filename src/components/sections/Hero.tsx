@@ -25,16 +25,6 @@ const Hero = () => {
         <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-overlay"></div>
       </div>
 
-      {/* Logo Central - Premium Positioning */}
-      <div className="absolute top-12 left-1/2 transform -translate-x-1/2 z-30">
-        <div className="bg-black/40 backdrop-blur-lg border border-gold/30 rounded-2xl p-6 shadow-dramatic">
-          <img 
-            src={lykLogo}
-            alt="LYK Studio Logo - Photographie Professionnelle"
-            className="w-40 h-auto filter brightness-0 invert"
-          />
-        </div>
-      </div>
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 py-20">

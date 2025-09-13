@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Menu, X, Camera, Phone } from "lucide-react";
+import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import lykLogo from "@/assets/lyk-logo-header.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,9 +21,13 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2 group">
-            <div className="p-2 bg-gradient-gold rounded-lg shadow-gold group-hover:scale-105 transition-smooth">
-              <Camera className="h-6 w-6 text-primary" />
+          <Link to="/" className="flex items-center space-x-3 group">
+            <div className="group-hover:scale-105 transition-smooth">
+              <img 
+                src={lykLogo}
+                alt="LYK Studio Logo"
+                className="h-10 w-auto"
+              />
             </div>
             <div>
               <h1 className="text-xl font-bold text-primary">LYK Studio</h1>
