@@ -1,4 +1,4 @@
-import { Camera, MapPin, Phone, Mail, Clock, Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
+import { Camera, MapPin, Phone, Mail, Clock, Facebook, Instagram, Play } from "lucide-react";
 import { Link } from "react-router-dom";
 import lykLogo from "@/assets/lyk-logo.png";
 
@@ -23,10 +23,9 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { icon: Facebook, href: "#", label: "Facebook" },
+    { icon: Facebook, href: "https://web.facebook.com/search/top?q=lyk%20studio", label: "Facebook" },
     { icon: Instagram, href: "#", label: "Instagram" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Twitter, href: "#", label: "Twitter" }
+    { icon: Play, href: "https://www.tiktok.com/search?q=lyk%20studio&t=1757802691389", label: "TikTok" }
   ];
 
   return (
