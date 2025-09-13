@@ -2,7 +2,7 @@ import { ArrowRight, Camera, Award, Star, Play, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import portraitWhite1 from "@/assets/gallery/portrait-white-1.jpg";
 import artisticBlonde from "@/assets/gallery/artistic-blonde.jpg";
-import lykLogo from "@/assets/lyk-logo.png";
+import lykLogo from "@/assets/lyk-logo-new.png";
 
 const Hero = () => {
   return (
@@ -19,28 +19,21 @@ const Hero = () => {
           <div className="absolute inset-0 bg-gradient-hero"></div>
         </div>
         
-        {/* Secondary Image - Artistic Overlay */}
-        <div className="absolute top-0 right-0 w-1/3 h-full opacity-30">
-          <img 
-            src={artisticBlonde} 
-            alt="Photographie artistique LYK Studio"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-spotlight"></div>
-        </div>
 
         {/* Cinematic Overlay Effects */}
         <div className="absolute inset-0 bg-gradient-fashion"></div>
         <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-overlay"></div>
       </div>
 
-      {/* Floating Logo */}
-      <div className="absolute top-1/4 right-8 lg:right-16 z-20 opacity-20">
-        <img 
-          src={lykLogo}
-          alt="LYK Studio Logo"
-          className="w-32 lg:w-48 h-auto"
-        />
+      {/* Logo Central - Premium Positioning */}
+      <div className="absolute top-12 left-1/2 transform -translate-x-1/2 z-30">
+        <div className="bg-black/40 backdrop-blur-lg border border-gold/30 rounded-2xl p-6 shadow-dramatic">
+          <img 
+            src={lykLogo}
+            alt="LYK Studio Logo - Photographie Professionnelle"
+            className="w-40 h-auto filter brightness-0 invert"
+          />
+        </div>
       </div>
 
       {/* Content */}
