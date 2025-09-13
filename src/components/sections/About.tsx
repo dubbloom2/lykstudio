@@ -83,7 +83,7 @@ const About = () => {
               className="bg-gold hover:bg-gold-dark text-black font-semibold shadow-gold group"
               asChild
             >
-              <a href="#contact" className="flex items-center space-x-2">
+              <a href="/contact" className="flex items-center space-x-2">
                 <span>Travaillons ensemble</span>
                 <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </a>

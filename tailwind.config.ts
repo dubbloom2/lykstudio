@@ -55,11 +55,14 @@ export default {
         },
         "black-soft": "hsl(var(--black-soft))",
         "gray-elegant": "hsl(var(--gray-elegant))",
-        // Gradients as background images
+        // Gradients as background images - Fashion & Cinematic
         gradient: {
           gold: "var(--gradient-gold)",
           black: "var(--gradient-black)",
           hero: "var(--gradient-hero)",
+          fashion: "var(--gradient-fashion)",
+          overlay: "var(--gradient-overlay)",
+          spotlight: "var(--gradient-spotlight)",
         },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
@@ -76,15 +79,23 @@ export default {
         "gradient-gold": "var(--gradient-gold)",
         "gradient-black": "var(--gradient-black)",
         "gradient-hero": "var(--gradient-hero)",
+        "gradient-fashion": "var(--gradient-fashion)",
+        "gradient-overlay": "var(--gradient-overlay)",
+        "gradient-spotlight": "var(--gradient-spotlight)",
       },
       boxShadow: {
         elegant: "var(--shadow-elegant)",
         gold: "var(--shadow-gold)",
         lifted: "var(--shadow-lifted)",
+        dramatic: "var(--shadow-dramatic)",
+        glow: "var(--shadow-glow)",
+        inset: "var(--shadow-inset)",
       },
       transitionTimingFunction: {
         smooth: "var(--transition-smooth)",
         bounce: "var(--transition-bounce)",
+        elegant: "var(--transition-elegant)",
+        dramatic: "var(--transition-dramatic)",
       },
       borderRadius: {
         lg: "var(--radius)",
